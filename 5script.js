@@ -21,9 +21,39 @@ const Multiply = (cipars1, cipars2) => {
 const Divide = (cipars1, cipars2) => {
     return cipars1 / cipars2
 }
+const clear = () => {
+    inputins1.value = ""
+    inputins2.value = ""
+}
 
 plusins.addEventListener('click', () => {
-    console.log(Add
-        (parseInt(inputins1.value)
-        ,parseInt(inputins2.value)))
+    answer.textContent = Add
+    (parseInt(inputins1.value),
+    parseInt(inputins2.value))
+
+    clear()
+})
+
+minus.addEventListener('click', () =>{
+    answer.textContent = Subtract
+    (parseInt(inputins1.value),
+    parseInt(inputins2.value))
+
+    clear
+})
+
+multiply.addEventListener ('click', () =>{
+    answer.textContent = Multiply
+    (parseInt(inputins1.value),
+    parseInt(inputins2.value))
+
+    clear
+})
+
+divide.addEventListener ('click', () =>{
+    answer.textContent = Divide
+    (parseInt(inputins1.value),
+    parseInt(inputins2.value))
+
+    clear
 })
